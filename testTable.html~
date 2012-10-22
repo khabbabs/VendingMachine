@@ -34,15 +34,14 @@
             height: 55px;
             
         }
-        #keypadTable{
+        #keypadimg{
             position: absolute;
             
-            left: 585px;
-            top: 240px;
-        }
-        #keypadTable tr td{
-            height: 80px;
-            width: 80px;
+            left: 570px;
+            top: 247px;
+            
+            
+            
         }
         
         
@@ -54,41 +53,27 @@
            <div id="itemTreyDiv">
             <!-- the main table is added (itemTrey) the makeDyamicTable.js
                  looks for the element id == table.                    -->
-              <table id="table" border="1"></table>
+              <table id="table"  border="1"></table>
            </div>
            
            <div id="DisplayCurrentAmmountDiv">
            <!--  -->
                 <table id="DispCurTable" border="1">
                     <tr>
-                        <td id="curDisp">0</td>
+                        <td id="curDisp">curr amt $</td>
                     </tr>
                 </table>
            </div>
            <div id="KeyPadImgDiv">
             <!--key pad image -->
-                <table id="keypadTable" border="0">
-                    <!--<tr>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                    </tr>--> 
-                </table>
-                
+                <img src="img/keyPad.jpg" id="keypadimg" alt="" border="1">
            </div>
         </body>
         <script src="makeDynamicTable.js"></script>
-        <script src="makeDynamicKeyPad.js"></script>
-         <script src="keyPadActionListener.js"></script>
+        <script src="keyPadActionListener.js"></script>
             <script type="text/javascript">
                  makeDynamicTable(5,5);
+                 
                  //var testele=document.getElementById("keypadimg");
                  //testele.onclick = function(){
                  //  alert("worked") 

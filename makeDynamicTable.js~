@@ -25,7 +25,6 @@ var temptr,temptd,tempTextNode;
            temptd.id = "table "+j+" "+i;
            temptr.appendChild(temptd)
            temptd.appendChild(tempTextNode);
-           
         }
     }
     
