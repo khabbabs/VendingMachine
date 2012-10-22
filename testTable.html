@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html>
     <style type="text/css" media="screen">
-        #table{
+        body{
             background-image: url(img/vendMachine.jpg);
             background-repeat: no-repeat;
             background-position: left top;
             width: 696px;
             height: 1200px;
-            padding-top: 38px;
+        }
+        
+        #table{
+            position: absolute;
+            left: 50px;
+            top: 35px;
+            
+            /*width: 696px;
+            height: 1200px;*/
+            /*padding-top: 28px;
             padding-bottom: 370px;
             padding-right: 160px;
-            padding-left: 52px;
+            padding-left: 42px;*/
         }
+        #table tr td {
+            background-color: green;
+            border-color: grey;
+            height: 152px;
+            width: 90px;
+        }
+        #DispCurTable{
+            position: absolute;
+            left: 570px;
+            top: 180px;
+            height: 55px;
+            
+        }
+        #keypadimg{
+            position: absolute;
+            
+            left: 570px;
+            top: 247px;
+            
+            
+            
+        }
+        
+        
     </style>
-    <script src="makeDynamicTable.js"></script>
+    
+    
         <body id="mainBody">
               <!--  <img id="vendMachine" src="img/vendMachine.jpg"> -->
-           <div id="testdiv">
-              <table id="table" border="1"></table>
+           <div id="itemTreyDiv">
+            <!-- the main table is added (itemTrey) the makeDyamicTable.js
+                 looks for the element id == table.                    -->
+              <table id="table"  border="1"></table>
            </div>
-        
+           
+           <div id="DisplayCurrentAmmountDiv">
+           <!--  -->
+                <table id="DispCurTable" border="1">
+                    <tr>
+                        <td id="curDisp">curr amt $</td>
+                    </tr>
+                </table>
+           </div>
+           <div id="KeyPadImgDiv">
+            <!--key pad image -->
+                <img src="img/keyPad.jpg" id="keypadimg" alt="" border="1">
+           </div>
         </body>
+        <script src="makeDynamicTable.js"></script>
+        <script src="keyPadActionListener.js"></script>
             <script type="text/javascript">
                  makeDynamicTable(5,5);
+                 
+                 //var testele=document.getElementById("keypadimg");
+                 //testele.onclick = function(){
+                 //  alert("worked") 
+                 //};
             </script>
+            
     
 </html>
