@@ -37,12 +37,21 @@
         #keypadTable{
             position: absolute;
             
-            left: 585px;
+            left: 575px;
             top: 240px;
         }
         #keypadTable tr td{
-            height: 80px;
-            width: 80px;
+            height: 45px;
+            width: 45px;
+        }
+        #changeTable{
+            position: absolute;
+            height: 85px;
+            width: 85px;
+            
+            left: 590px;
+            top: 508px;
+            
         }
         
         
@@ -67,7 +76,7 @@
            </div>
            <div id="KeyPadImgDiv">
             <!--key pad image -->
-                <table id="keypadTable" border="0">
+                <table id="keypadTable" border="2">
                     <!--<tr>
                         <td>1</td>
                     </tr>
@@ -81,12 +90,20 @@
                         <td>4</td>
                     </tr>--> 
                 </table>
+                <table id="changeTable" border="2">
+                    <tr>
+                        <td id="change">
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
                 
            </div>
         </body>
         <script src="makeDynamicTable.js"></script>
         <script src="makeDynamicKeyPad.js"></script>
-         <script src="keyPadActionListener.js"></script>
+         <script src="keyPadActionListenerDollar.js"></script>
             <script type="text/javascript">
                  makeDynamicTable(5,5);
                  //var testele=document.getElementById("keypadimg");
