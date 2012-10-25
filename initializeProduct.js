@@ -73,7 +73,7 @@ function decrementQty(value){
     if(productArray[value].quantity!=0){
         productArray[value].quantity--;
         document.getElementById(""+value).title="Price: $"+(productArray[value].price)+"   Qty :"+productArray[value].quantity;
-        document.getElementById("curDisp").innerHTML = (currBlance-currPrice);
+        document.getElementById("curDisp").innerHTML = ((currBlance-currPrice)*100)/100;
         addToDispenser(productArray[value]);
         }
         else{

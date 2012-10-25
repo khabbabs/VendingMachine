@@ -1,12 +1,22 @@
-var rows = 4;
+/*******************************
+ *Add elements to the keypadTable
+ *on the d.o.m. these elements
+ *then in turn are used by the
+ *actionlistener to create buttons
+ *of Dallor and euros.
+ *@author Khabba Saleem khabbabs@unm.edu
+ ******************************/
 
+
+
+
+
+var rows = 4;
 var table = document.getElementById("keypadTable");
 var temptr,temptd;
 for(var i =0;i<rows;i++){
     temptr = document.createElement("tr");
     table.appendChild(temptr);
-    
-    
     
     for(var j = 0;j<2;j++){
        

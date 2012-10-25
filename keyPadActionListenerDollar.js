@@ -1,5 +1,10 @@
-//var padElements= document.getElementById("keypadTable").attributes.length;
-//console.log("elements"+padElements[0]);
+
+/**************************************************8
+ *finds the key pad elements, creates action listeners
+ *for all the buttons. sends the total value to the
+ *d.o.m for display when a button is clicked
+ *@author khabbabs@unm.edu
+ **************************************************/
 var dollar,_50cents,_25cents,_10cents,change,euro,_50pence,_20pence,_10pence;
 var totalAmount=0;
 dollar   = document.getElementById("1_dollar");

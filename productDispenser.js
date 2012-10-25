@@ -4,6 +4,7 @@
  *are dispensed.
  *when its clicked the item gets dispensed,
  *displaying an alert msg for the item.
+ *@author khabbab saleem khabbabs@unm.edu
  ************************************************/
 var dispensing = document.getElementById("dispTable");
 var tr,td;
@@ -27,7 +28,8 @@ function addToDispenser(prod){
 
 td.onclick = function(){
     var tempProd = dispArray.pop();
-    alert("temp prod is : "+tempProd.name);
+    alert("Dispensing : "+tempProd.name+"\n"
+        +"Experiation Date :"+tempProd.date);
     if(dispArray[dispArray.length-1]==null){
     dispImg.src = null;
     }
