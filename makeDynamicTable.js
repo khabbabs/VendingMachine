@@ -21,10 +21,10 @@ var temptr,temptd,tempTextNode;
         mainTable.appendChild(temptr);
         for(var j =0;j<width;j++){
            temptd = document.createElement("td")
-           tempTextNode = document.createTextNode(" "+j+i);
+           //tempTextNode = document.createTextNode(" "+j+i);
            temptd.id = "table "+j+" "+i;
            temptr.appendChild(temptd)
-           temptd.appendChild(tempTextNode);
+           //temptd.appendChild(tempTextNode);
            
         }
     }

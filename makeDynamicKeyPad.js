@@ -39,17 +39,5 @@ for(var i =0;i<rows;i++){
        temptd.id="10_pence";
         }
      }
-    }
-    //if(i==0){
-    //    temptd.id="1_dollar";
-    //}else if(i==1){
-    //    temptd.id="25_cent";
-    //}else if(i==2){
-    //    temptd.id="10_cent";
-    //}
-    //else {
-    //    temptd.id="change";
-    //}
-    
-    
+    }    
 }

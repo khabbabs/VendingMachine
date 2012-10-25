@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+    <meta charset="utf-8">
 <html>
     <style type="text/css" media="screen">
         body{
@@ -8,22 +9,13 @@
             width: 696px;
             height: 1200px;
         }
-        
         #table{
             position: absolute;
             left: 50px;
             top: 35px;
-            
-            /*width: 696px;
-            height: 1200px;*/
-            /*padding-top: 28px;
-            padding-bottom: 370px;
-            padding-right: 160px;
-            padding-left: 42px;*/
         }
         #table tr td {
             background-color: green;
-            border-color: grey;
             height: 152px;
             width: 90px;
         }
@@ -32,11 +24,9 @@
             left: 570px;
             top: 180px;
             height: 55px;
-            
         }
         #keypadTable{
             position: absolute;
-            
             left: 575px;
             top: 240px;
         }
@@ -48,13 +38,17 @@
             position: absolute;
             height: 85px;
             width: 85px;
-            
             left: 590px;
             top: 508px;
             
         }
-        
-        
+        #dispTable{
+            position: absolute;
+            height: 152px;
+            width: 90px;
+            top: 900px;
+            left: 250px;
+        }
     </style>
     
     
@@ -68,49 +62,39 @@
            
            <div id="DisplayCurrentAmmountDiv">
            <!--  -->
-                <table id="DispCurTable" border="1">
+                <table id="DispCurTable" border="0">
                     <tr>
-                        <td id="curDisp">0</td>
+                        <td id="curDisp">0.00</td>
                     </tr>
                 </table>
            </div>
            <div id="KeyPadImgDiv">
             <!--key pad image -->
-                <table id="keypadTable" border="2">
-                    <!--<tr>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                    </tr>--> 
-                </table>
-                <table id="changeTable" border="2">
+                <table id="keypadTable" border="0"></table>
+                <!--for the change button-->
+                <table id="changeTable" border="0">
                     <tr>
                         <td id="change">
-                            
                         </td>
                     </tr>
-                    
                 </table>
+           </div>
+           <div id="dispenser">
+            <table id="dispTable" border="1">
                 
+            </table>
            </div>
         </body>
         <script src="makeDynamicTable.js"></script>
         <script src="makeDynamicKeyPad.js"></script>
-         <script src="keyPadActionListenerDollar.js"></script>
-            <script type="text/javascript">
+        <script src="keyPadActionListenerDollar.js"></script>
+        <script type="text/javascript">
                  makeDynamicTable(5,5);
-                 //var testele=document.getElementById("keypadimg");
-                 //testele.onclick = function(){
-                 //  alert("worked") 
-                 //};
-            </script>
+        </script>
+        <script src="product.js"></script>
+        <script src="initializeProduct.js"></script>
+        <script src="productTableActionListener.js"></script>
+        <script src="productDispenser.js"></script>
             
     
 </html>

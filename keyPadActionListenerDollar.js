@@ -59,13 +59,15 @@ change.onclick = function (){
 
 
 function updateTotalAmmount(value){
-  
+    
+    totalAmount = parseFloat(document.getElementById("curDisp").innerHTML);
     if(value!="clear"){
-    totalAmount+=value;
+    totalAmount+=parseFloat(value);
     document.getElementById("curDisp").innerHTML=Math.round(totalAmount*100)/100;
     }else if(value=="clear"){
         alert("your total change is : $"+Math.round(totalAmount*100)/100);
         document.getElementById("curDisp").innerHTML=0.00;
         totalAmount=0;
     }
+    console.log("here :"+totalAmount);
 }
